@@ -7,7 +7,7 @@
 #  ln -s $PATH_TO_PIT ~/bin/psh
 
 # Usage:
-#  pci <files>: commts changes and pushes the changes
+#  pci <files>: commits changes and pushes the changes
 #   -> if it aborts due to 'non-fastforward' erros do a `pup`, 
 #      fix conflicts if any, and then `psh` the changes
 #  pup: updates the local working dir by rebasing any uncommited
