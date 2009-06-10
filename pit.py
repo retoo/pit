@@ -1,5 +1,10 @@
 #!/usr/bin/python
 
+# Installation
+#  Add ~/bin/ to your path 
+#  ln -s $PATH_TO_PIT ~/bin/pci
+#  ln -s $PATH_TO_PIT ~/bin/pup
+
 from subprocess import call
 import os 
 import sys
