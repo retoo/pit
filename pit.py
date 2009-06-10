@@ -4,6 +4,14 @@
 #  Add ~/bin/ to your path 
 #  ln -s $PATH_TO_PIT ~/bin/pci
 #  ln -s $PATH_TO_PIT ~/bin/pup
+#  ln -s $PATH_TO_PIT ~/bin/psh
+
+# Usage:
+#  pci <files>: commits changes and pushes the changes
+#   -> if it aborts due to 'non-fastforward' erros do a `pup`, 
+#      fix conflicts if any, and then `psh` the changes
+#  pup: updates the local working dir by rebasing any uncommited
+#       changes to the lasted verson from the repo
 
 # I will inflict a test commit
 
@@ -25,6 +33,9 @@ elif command == "pup":
     ''' updates the working dir by rebasing local changes to upstream's head '''
     cmds = [
         ['git', 'pull', '--rebase'] + args]
+elif command == "psh":
+    cmds = [
+        ['git', 'push']]
 else:
     print "unknown cmd: '%s'" % repr(command)
     sys.exit(99)
