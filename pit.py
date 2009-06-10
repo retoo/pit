@@ -27,7 +27,6 @@ else:
     print "unknown cmd: '%s'" % repr(command)
     sys.exit(99)
 
-
 for cmd in cmds:
     print " ".join(cmd)
     ret = call(cmd)
