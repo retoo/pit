@@ -19,7 +19,8 @@
 #  pup: updates the local working dir by rebasing any uncommited
 #       changes to the lasted verson from the repo
 #  psh: push all changes to the remote repo
-#  prc: marks all conflicts as resolved
+#  prc <conflict-files: marks all conflicts as resolved
+#  pst: git status
 
 from subprocess import call
 import os 
