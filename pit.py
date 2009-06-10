@@ -5,6 +5,8 @@
 #  ln -s $PATH_TO_PIT ~/bin/pci
 #  ln -s $PATH_TO_PIT ~/bin/pup
 
+# I will inflict a test commit
+
 from subprocess import call
 import os 
 import sys
